@@ -166,9 +166,7 @@ The code above calls the `password_input()` function without arguments and store
 
 The next step is to evaluate the password's security. Before we perform any analysis, we first check it against a database of known insecure passwords.
 
-The program uses a small list that can be found in the GitHub repository for this program, which is based on Daniel Miessler's [10-million-password-list-top-100.txt](https://github.com/danielmiessler/SecLists/blob/master/Passwords/Common-Credentials/10-million-password-list-top-100.txt).
-
-Naturally, a much larger list can and should be utilized; however, for the purposes of this program, a small list of around 100 passwords would suffice.
+The program uses a small list that can be found on [Daniel Miessler's GitHub](https://github.com/danielmiessler/SecLists/blob/master/Passwords/Common-Credentials/10-million-password-list-top-100.txt). Naturally, a much larger list can and should be utilized; however, for the purposes of this program, a small list of around 100 passwords would suffice.
 
 In the source code, `is_password_in_file(search_string)` is what enables this functionality.
 
